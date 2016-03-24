@@ -612,9 +612,6 @@ void R_DrawViewModel (void)
 	vec3_t		dist;
 	float		add;
 	dlight_t	*dl;
-	
-	if (!r_drawviewmodel.value || r_fov_greater_than_90)
-		return;
 
 	if (cl.items & IT_INVISIBILITY)
 		return;
